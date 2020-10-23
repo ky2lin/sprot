@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yuan.dao.UserDao">
+    <!--根据用户名和密码获取信息-->
+    <select id="getUserByMessage" resultType="com.yuan.pojo.User">
+        SELECT * FROM easyuser WHERE
+        username = #{username} AND password=#{password} AND state = 1;
+    </select>
+
+    <!--获取所有用户  pageStart:从哪里开始展示  pageSize：页面展示条数 -->
+    <select id="getAllUser" resultType="com.yuan.pojo.User">
+        SELECT * FROM easyuser
+        <if test="username !=null">
+            WHERE username LIKE #{username}
+        </if>
+        LIMIT #{pageStart},#{pageSize}
+    </select>
+
+    <!--获取所有用户的个数-->
+    <select id="getUserCounts" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM easyuser
+        <if test="username !=null">
+            WHERE username LIKE #{username}
+        </if>
+    </select>
+
+    <!--更新用户状态-->
+    <update id="updateState">
+        UPDATE easyuser SET state=#{state} WHERE id=#{id}
+    </update>
+
+    <!--添加用户的方法-->
+    <insert id="addUser">
+            INSERT INTO easyuser
+            (username,password,email,role,state)
+            VALUES(#{username},#{password},#{email},#{role},#{state})
+    </insert>
+
+    <!--删除用户的方法-->
+    <delete id="deleteUser" >
+        DELETE FROM easyuser WHERE id=#{id}
+    </delete>
+
+    <!--修改用户前先查询出用户 -->
+    <select id="getUpdateUser" resultType="com.yuan.pojo.User">
+        SELECT * FROM easyuser WHERE id=#{id}
+    </select>
+
+    <!--修改用户前，根据查询出的用户进行修改-->
+    <update id="editUser">
+        UPDATE easyuser SET username=#{username},password=#{password},email=#{email} WHERE id=#{id}
+    </update>
+
+</mapper>

@@ -1,0 +1,25 @@
+.home-container {
+  height: 100%;
+}
+.el-header {
+  background-color: #373d41;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0%;
+  color: #fff;
+  font-size: 20px;
+  align-items: center;
+}
+.el-aside {
+  background-color: #333744;
+}
+.el-aside .el-menu {
+  border-right: none;
+}
+.el-main {
+  background-color: #eaedf1;
+}
+.img-logo {
+  width: 55px;
+  height: 55px;
+}

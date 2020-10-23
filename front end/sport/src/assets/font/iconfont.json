@@ -1,0 +1,72 @@
+{
+  "id": "2111105",
+  "name": "VueProject",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1430203",
+      "name": "运动",
+      "font_class": "yundong1",
+      "unicode": "e6c0",
+      "unicode_decimal": 59072
+    },
+    {
+      "icon_id": "1164998",
+      "name": "书",
+      "font_class": "shu",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "1802670",
+      "name": "商品",
+      "font_class": "shangpin",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "5665003",
+      "name": "管理员",
+      "font_class": "guanli",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "12999967",
+      "name": "登录",
+      "font_class": "denglu",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "13965701",
+      "name": "表单 列表-03",
+      "font_class": "biaodanliebiao-",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "16346855",
+      "name": "密 码",
+      "font_class": "mima",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "1636481",
+      "name": "食物",
+      "font_class": "shiwu",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "10040231",
+      "name": "卡路里",
+      "font_class": "kaluli",
+      "unicode": "e6eb",
+      "unicode_decimal": 59115
+    }
+  ]
+}
